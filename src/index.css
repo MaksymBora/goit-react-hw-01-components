@@ -188,3 +188,27 @@ img {
 .status.online {
   background-color: green;
 }
+
+/* 4th Task Table*/
+
+.transaction-history {
+  min-width: 700px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.transaction-header {
+  background-color: aquamarine;
+  line-height: 40px;
+}
+
+.transaction-row {
+  background-color: #fff;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #808080;
+}
+
+.transaction-row:nth-child(2n) {
+  background-color: #ecf2f4;
+}
