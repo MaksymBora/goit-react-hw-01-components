@@ -42,6 +42,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 150px;
   margin-top: 100px;
 }
 
@@ -100,5 +101,62 @@ img {
 }
 
 .quantity {
+  font-weight: 500;
+}
+
+/* 2nd Task  Statistics */
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 0px #000000;
+  padding-top: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.stat-list {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.item:nth-child(1) {
+  background-color: lightblue;
+}
+
+.item:nth-child(2) {
+  background-color: rgb(129, 19, 239);
+}
+
+.item:nth-child(3) {
+  background-color: rgb(214, 100, 100);
+}
+
+.item:nth-child(4) {
+  background-color: rgb(46, 245, 89);
+}
+
+.item:nth-child(5) {
+  background-color: rgb(59, 62, 241);
+}
+
+.percentage {
   font-weight: 500;
 }
