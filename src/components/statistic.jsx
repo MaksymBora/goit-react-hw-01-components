@@ -10,7 +10,6 @@ export default function Statistic({ stats, title }) {
 
 	return (
 		<section className="statistics">
-	
 			{isTitle}
 			<ul className="stat-list">
 				{listItems}

@@ -2,7 +2,7 @@ export default function Profile({username, avatar, tag, location, stats: {follow
 	return (
 		<div className="profile"
 			>
-  		<div className="description" style={{}}>
+  		<div className="description">
     		<img
 				src={avatar}
 				alt="User avatar"
@@ -14,7 +14,7 @@ export default function Profile({username, avatar, tag, location, stats: {follow
 			<p className="location">{location}</p>
 		</div>
 
-		<ul className="stats" style={{}}>
+		<ul className="stats">
 			<li>
 				<span className="label">Followers</span>
 				<span className="quantity">{followers}</span>
