@@ -6,11 +6,12 @@ export default function Statistic({ stats, title }) {
 		</li>
 	);
 
-	const isTitle = title ? <h2 className="title">{title}</h2> : ''
+	// const isTitle = title ? <h2 className="title">{title}</h2> : ''
 
 	return (
 		<section className="statistics">
-			{isTitle}
+			{/* {isTitle} */}
+			{title && <h2 className="title">{title}</h2>}
 			<ul className="stat-list">
 				{listItems}
 			</ul>
