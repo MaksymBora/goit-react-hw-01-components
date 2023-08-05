@@ -1,4 +1,4 @@
-import StatsItems from "./statsItems";
+import StatsItems from "./StatsItems";
 import {Statisctics} from './statistic.style'
 import {Title} from './statistic.style'
 import {StatList} from './statistic.style'

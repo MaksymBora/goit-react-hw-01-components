@@ -1,7 +1,7 @@
-import TableRowData from "./transaction";
+import TableRowData from "./Transaction";
 import {TransactionTable} from './transactionHist.style'
-import {TableHeader} from './transactionHist.style'
-import {TableRow} from './transactionHist.style'
+import {TableHeader, TableRow} from './transactionHist.style'
+
 
 
 export default function TransactionHistory({ transactionsItems }) {

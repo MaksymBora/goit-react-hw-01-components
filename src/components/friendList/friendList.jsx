@@ -1,4 +1,4 @@
-import FriendItem from "./friendCard";
+import FriendItem from "./FriendCard";
 import {Friends} from './friendList.style'
 import {Item} from './friendList.style'
 
