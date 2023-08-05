@@ -1,4 +1,4 @@
-import TableRowData from "./Transaction";
+import TableRowData from "./transaction";
 import {TransactionTable} from './transactionHist.style'
 import {TableHeader, TableRow} from './transactionHist.style'
 

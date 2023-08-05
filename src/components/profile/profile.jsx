@@ -1,4 +1,4 @@
-import UserInfo from './UserInfo'
+import UserInfo from './userInfo'
 import { Card } from './profile.style'
 import {Avatar} from './profile.style'
 import {Name} from './profile.style'
