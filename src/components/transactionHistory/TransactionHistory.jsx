@@ -19,7 +19,7 @@ export default function TransactionHistory({ transactionsItems }) {
 				{transactionsItems.map((transactionsItem, index) => {
 					const isEvenRow = index % 2 === 0;
 					return (
-						<TableRow key={transactionsItem.id} className="transaction-row" $iseven={isEvenRow}>
+						<TableRow key={transactionsItem.id} className="transaction-row">
 							<TableRowData items={transactionsItem} />
 						</TableRow>
 					);
