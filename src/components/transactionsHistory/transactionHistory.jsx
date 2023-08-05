@@ -17,9 +17,9 @@ export default function TransactionHistory({ transactionsItems }) {
 
 			<tbody>
 				{transactionsItems.map((transactionsItem, index) => {
-					// const isEvenRow = index % 2 === 0;
+					const isEvenRow = index % 2 === 0;
 					return (
-						<TableRow key={transactionsItem.id} className="transaction-row" >
+						<TableRow key={transactionsItem.id} className="transaction-row" $iseven={isEvenRow}>
 							<TableRowData items={transactionsItem} />
 						</TableRow>
 					);
