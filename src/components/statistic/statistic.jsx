@@ -1,8 +1,6 @@
 import StatsItems from "./statsItems";
-import {Statisctics} from './statistic.style'
-import {Title} from './statistic.style'
-import {StatList} from './statistic.style'
-import {Item} from './statistic.style'
+import {Statisctics, Title, StatList, Item} from './statistic.style'
+
 
 
 const getRandomColor = () => {

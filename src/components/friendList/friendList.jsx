@@ -1,6 +1,6 @@
 import FriendItem from "./friendCard";
-import {Friends} from './friendList.style'
-import {Item} from './friendList.style'
+import {Friends, Item} from './friendList.style'
+
 
 export default function FriendList({props}) {
 

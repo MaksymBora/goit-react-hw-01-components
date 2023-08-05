@@ -1,10 +1,6 @@
 import UserInfo from './userInfo'
-import { Card } from './profile.style'
-import {Avatar} from './profile.style'
-import {Name} from './profile.style'
-import {Tag} from './profile.style'
-import {Location} from './profile.style'
-import {Stats} from './profile.style'
+import { Card, Avatar, Name, Tag, Location, Stats } from './profile.style'
+
 
 export default function Profile({ username, avatar, tag, location, stats: { followers, views, likes } }) {
 	return (

@@ -1,7 +1,5 @@
-import {Status} from './friendCard.style'
-import {Online} from './friendCard.style'
-import {Avatar} from './friendCard.style'
-import {Name} from './friendCard.style'
+import {Status, Online, Avatar, Name} from './friendCard.style'
+
 
 
 export default function FriendItem({ items: { isOnline, name, avatar } }) {
