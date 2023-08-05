@@ -1,27 +1,31 @@
-import TableRowData from "./transAction";
+import TableRowData from "./transaction";
+import {TransactionTable} from './transactionHist.style'
+import {TableHeader} from './transactionHist.style'
+import {TableRow} from './transactionHist.style'
 
 
 export default function TransactionHistory({ transactionsItems }) {
 	return (
-	<table className="transaction-history">
-		<thead className="transaction-header">
+	<TransactionTable className="transaction-history">
+		<TableHeader className="transaction-header">
 			<tr>
 				<th>Type</th>
 				<th>Amount</th>
 				<th>Currency</th>
 			</tr>
-		</thead>
+		</TableHeader>
 
 			<tbody>
-				{transactionsItems.map(transactionsItem => {
+				{transactionsItems.map((transactionsItem, index) => {
+					const isEvenRow = index % 2 === 0;
 					return (
-						<tr key={transactionsItem.id} className="transaction-row">
+						<TableRow key={transactionsItem.id} className="transaction-row" isEven={isEvenRow}>
 							<TableRowData items={transactionsItem} />
-						</tr>
+						</TableRow>
 					);
 				})}
 			
 		</tbody>
-	</table>
+	</TransactionTable>
 	);
 }

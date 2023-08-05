@@ -1,21 +1,27 @@
 import UserInfo from './userInfo'
+import { Card } from './profile.style'
+import {Avatar} from './profile.style'
+import {Name} from './profile.style'
+import {Tag} from './profile.style'
+import {Location} from './profile.style'
+import {Stats} from './profile.style'
 
 export default function Profile({ username, avatar, tag, location, stats: { followers, views, likes } }) {
 	return (
-		<div className="profile">
+		<Card className="profile">
 			<div className="description">
-				<img
+				<Avatar
 					src={avatar}
 					alt="User avatar"
 						className="avatar"
 						style={{}}
 				/>
-				<p className="name">{username}</p>
-				<p className="tag">@{tag}</p>
-				<p className="location">{location}</p>
+				<Name className="name">{username}</Name>
+				<Tag className="tag">@{tag}</Tag>
+				<Location className="location">{location}</Location>
 			</div>
 
-			<ul className="stats">
+			<Stats className="stats">
 				<li>
 					<UserInfo label="Followers" quantity={followers} />
 				</li>
@@ -25,7 +31,7 @@ export default function Profile({ username, avatar, tag, location, stats: { foll
 				<li>
 					<UserInfo label="Likes" quantity={likes} />
 				</li>
-			</ul>
-		</div>
+			</Stats>
+		</Card>
 	);
 }

@@ -1,16 +1,18 @@
 import FriendItem from "./friendCard";
+import {Friends} from './friendList.style'
+import {Item} from './friendList.style'
 
 export default function FriendList({props}) {
 
 	return (
-		<ul className="friend-list">
+		<Friends className="friend-list">
 			{props.map(prop => {
 				return (
-					<li key={prop.id} className="friend-item" >
+					<Item key={prop.id} className="friend-item" >
 						<FriendItem items={prop} />
-					</li>
+					</Item>
 	)
 })}
-		</ul>
+		</Friends>
 	);
 }

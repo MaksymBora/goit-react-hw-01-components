@@ -1,19 +1,29 @@
 import StatsItems from "./statsItems";
+import {Statisctics} from './statistic.style'
+import {Title} from './statistic.style'
+import {StatList} from './statistic.style'
+import {Item} from './statistic.style'
 
+
+const getRandomColor = () => {
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+  return randomColor;
+};
 
 export default function Statistic({ stats, title }) {
 	return (
-		<section className="statistics">
-			{title && <h2 className="title">{title}</h2>}
-			<ul className="stat-list">
-				{stats.map(stat  => {
+		<Statisctics className="statistics">
+			{title && <Title className="title">{title}</Title>}
+			<StatList className="stat-list">
+				{stats.map((stat, index) => {
+					const color = getRandomColor(); 
 					return (
-						<li key={stat.id} className="item">
+						<Item key={stat.id} className="item" color={color}>
 							<StatsItems stats={stat} />
-						</li>);
+						</Item>);
 				}) }
-			</ul>
-		</section>
+			</StatList>
+		</Statisctics>
 	);
 }
 
