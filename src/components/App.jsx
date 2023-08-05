@@ -4,8 +4,8 @@ import data from '../data.json'
 import Statistic from './statistic/statistic'
 import friendsData from '../friends.json'
 import FriendList from './friendList/friendList'
-import transactions from '../transactions.json'
-import TransactionHistory from './transactionHistory/transactionHistory'
+// import transactions from '../transactions.json'
+// import TransactionHistory from './transactionHistory/transactionHistory'
 import { GlobalStyle } from './GlobalStyle'
 
 export const App = () => {
