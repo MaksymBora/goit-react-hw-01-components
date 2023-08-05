@@ -1,4 +1,4 @@
-// import TableRowData from "./transaction";
+import TableRowData from "./transaction";
 import {TransactionTable, TableHeader, TableRow} from './transactionHist.style'
 
 
@@ -15,17 +15,17 @@ export default function TransactionHistory({ transactionsItems }) {
 			</tr>
 		</TableHeader>
 
-			{/* <tbody>
+			<tbody>
 				{transactionsItems.map((transactionsItem, index) => {
-					const isEvenRow = index % 2 === 0;
+					// const isEvenRow = index % 2 === 0;
 					return (
-						<TableRow key={transactionsItem.id} className="transaction-row" $iseven={isEvenRow}>
+						<TableRow key={transactionsItem.id} className="transaction-row" >
 							<TableRowData items={transactionsItem} />
 						</TableRow>
 					);
 				})}
 			
-		</tbody> */}
+		</tbody>
 	</TransactionTable>
 	);
 }

@@ -25,8 +25,6 @@ export const App = () => {
       <FriendList props={friendsData} />
 
       <TransactionHistory transactionsItems={transactions} />
-
-      
     </>
   );
 };
