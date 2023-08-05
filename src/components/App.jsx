@@ -1,11 +1,11 @@
-import Profile from './profile/profile.jsx'
+import Profile from './profile/profile'
 import profileData from '../user.json'
 import data from '../data.json'
-import Statistic from './statistic/statistic.jsx'
+import Statistic from './statistic/statistic'
 import friendsData from '../friends.json'
-import FriendList from './friendList/friendList.jsx'
+import FriendList from './friendList/friendList'
 import transactions from '../transactions.json'
-import TransactionHistory from './transactionHistory/transactionHistory.jsx'
+import TransactionHistory from './transactionHistory/transactionHistory'
 import { GlobalStyle } from './GlobalStyle'
 
 export const App = () => {
