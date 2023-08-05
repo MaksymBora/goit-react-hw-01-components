@@ -1,4 +1,4 @@
-import TableRowData from "./transaction";
+// import TableRowData from "./transaction";
 import {TransactionTable, TableHeader, TableRow} from './transactionHist.style'
 
 
@@ -15,7 +15,7 @@ export default function TransactionHistory({ transactionsItems }) {
 			</tr>
 		</TableHeader>
 
-			<tbody>
+			{/* <tbody>
 				{transactionsItems.map((transactionsItem, index) => {
 					const isEvenRow = index % 2 === 0;
 					return (
@@ -25,7 +25,7 @@ export default function TransactionHistory({ transactionsItems }) {
 					);
 				})}
 			
-		</tbody>
+		</tbody> */}
 	</TransactionTable>
 	);
 }
