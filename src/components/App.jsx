@@ -6,10 +6,12 @@ import friendsData from '../friends.json'
 import FriendList from './friendList/friendList'
 import transactions from '../transactions.json'
 import TransactionHistory from './transactionHistory/transactionHistory'
+import { GlobalStyle } from './GlobalStyle'
 
 export const App = () => {
   return (
     <>
+      <GlobalStyle/>
       <Profile
         username={profileData.username}
         tag={profileData.tag}
@@ -23,6 +25,8 @@ export const App = () => {
       <FriendList props={friendsData} />
 
       <TransactionHistory transactionsItems={transactions} />
+
+      
     </>
   );
 };
