@@ -1,4 +1,6 @@
-export default function TableRowData({items: {type, amount, currency}}) {
+import PropTypes from 'prop-types'
+
+export default function TableRowData({ items: { type, amount, currency } }) {
 	return (
 		<>
 			<td>{type}</td>
@@ -7,3 +9,12 @@ export default function TableRowData({items: {type, amount, currency}}) {
 		</>
 	);
 }
+
+
+TableRowData.propTypes = {
+  items: PropTypes.shape({
+    type: PropTypes.string,
+    amount: PropTypes.string,
+    currency: PropTypes.string,
+  }),
+};

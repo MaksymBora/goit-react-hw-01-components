@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import UserInfo from './userInfo'
 import { Card, Avatar, Name, Tag, Location, Stats } from './profile.style'
 
@@ -30,4 +31,13 @@ export default function Profile({ username, avatar, tag, location, stats: { foll
 			</Stats>
 		</Card>
 	);
+}
+
+Profile.propTypes = {
+	username: PropTypes.string,
+	avatar: PropTypes.string,
+	tag: PropTypes.string,
+	location: PropTypes.string,
+	stats: PropTypes.objectOf(PropTypes.number),
+	UserInfo: PropTypes.element,
 }

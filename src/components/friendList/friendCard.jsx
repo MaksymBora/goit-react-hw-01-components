@@ -1,4 +1,5 @@
-import {Status, Online, Avatar, Name} from './friendCard.style'
+import PropTypes from 'prop-types'
+import { Status, Online, Avatar, Name } from './friendCard.style'
 
 
 
@@ -10,4 +11,13 @@ export default function FriendItem({ items: { isOnline, name, avatar } }) {
 			<Name className="name">{name}</Name>
 		</>
 	);
+}
+
+
+FriendItem.propTypes = {
+	items: PropTypes.shape({
+		isOnline: PropTypes.bool,
+		name: PropTypes.string,
+		avatar: PropTypes.string,
+})
 }

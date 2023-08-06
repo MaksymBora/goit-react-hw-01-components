@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import StatsItems from "./statsItems";
 import {Statisctics, Title, StatList, Item} from './statistic.style'
 
@@ -13,7 +14,7 @@ export default function Statistic({ stats, title }) {
 		<Statisctics className="statistics">
 			{title && <Title className="title">{title}</Title>}
 			<StatList className="stat-list">
-				{stats.map((stat, index) => {
+				{stats.map(stat => {
 					const color = getRandomColor(); 
 					return (
 						<Item key={stat.id} className="item" color={color}>
@@ -25,4 +26,8 @@ export default function Statistic({ stats, title }) {
 	);
 }
 
-
+Statistic.propTypes = {
+	stats: PropTypes.array,
+	title: PropTypes.string,
+	StatsItems: PropTypes.element,
+}

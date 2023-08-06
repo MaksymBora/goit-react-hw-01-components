@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import TableRowData from "./transaction";
 import {TransactionTable, TableHeader, TableRow} from './transactionHist.style'
 
@@ -29,3 +30,12 @@ export default function TransactionHistory({ transactionsItems }) {
 	</TransactionTable>
 	);
 }
+
+TransactionHistory.propTypes = {
+	transactionsItems: PropTypes.arrayOf(
+		PropTypes.shape({
+			id:PropTypes.string.isRequired,
+		})
+	),
+	TableRowData: PropTypes.element,
+};
